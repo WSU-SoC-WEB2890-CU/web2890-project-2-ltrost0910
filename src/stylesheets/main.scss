@@ -20,6 +20,7 @@
 /* Static caption text overlaying the images */
 #heroCarousel .carousel-caption-static {
   position: absolute;
+  z-index: 15;
   top: 50%;
   left: 30%;
   transform: translate(-50%);
@@ -27,14 +28,20 @@
   color: white;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute; /* Required for z-index to work */
+  z-index: 20; /* Ensure the controls are on top of the background */
+}
+
 /* Add a background gradient overlay on top of the images */
-#heroCarouselxxxx::before {
+#heroCarousel::before {
   content: "";
   position: absolute;
+  z-index: 5; /* Keeps it behind the text but above the images */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-  z-index: 5; /* Keeps it behind the text but above the images */
 }
