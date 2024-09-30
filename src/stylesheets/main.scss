@@ -47,20 +47,20 @@
 }
 
 // SCSS Mixin to apply gradient and background image
-@mixin gradient-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--image-url);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// @mixin gradient-overlay {
+//   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--image-url);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
 // Use the mixin in a class
-.image-with-gradient {
-  --image-url: ""; // Set default value
-  @include gradient-overlay;
-  height: 200px; // Adjust height as needed
-  position: relative;
-}
+// .image-with-gradient {
+//   --image-url: ""; // Set default value
+//   @include gradient-overlay;
+//   height: 200px; // Adjust height as needed
+//   position: relative;
+// }
 
 .img-gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--image-url);
