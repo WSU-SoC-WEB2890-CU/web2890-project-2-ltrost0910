@@ -5,10 +5,7 @@
     <title>Sunset Equestrian Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
-    <meta
-      name="description"
-      content="Sunset Equestrian Center offers horseback riding lessons, boarding services, and equine care programs for all ages."
-    />
+    <meta name="description" content="Sunset Equestrian Center" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="./stylesheets/main.scss" />
@@ -17,8 +14,8 @@
 
   <body>
     <header>
-      <!-- Nav Menu in javascript navmenu.js  -->
-      <script id="js_navmenu" src="navmenu.js"></script>
+      <!-- Nav Menu is in script at bottom to include javascript navment.js  -->
+
       <!-- Hero slider start -->
       <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -200,9 +197,36 @@
     </div>
     <!-- column layout end -->
 
-    <!-- Footer  in javascript footer.js  -->
-    <script id="js_footer" src="footer.js"></script>
+    <footer class="bg-dark text-white text-center text-lg-start mt-4">
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-2">
+            <h5 class="text-uppercase">Sunset Equestrian Center</h5>
+            <p>820 Mare Circle<br />Kaysville, UT 84110</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-2 text-center">
+            <img
+              class="img-fluid bg-white rounded-circle p-1"
+              src="/Sunset_Eq_Icon_transparent_bkg.webp"
+              alt="Sunset Equestrian Center"
+              width="100"
+              height="100"
+            />
+            <p class="mt-1">Contact us today to join the SEC family!</p>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-2">
+            <h5 class="text-uppercase">Follow Us</h5>
+            <a href="#" class="text-light me-4">Facebook</a>
+            <a href="#" class="text-light me-4">Twitter</a>
+            <a href="#" class="text-lightk">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: #f8f9fa">© 2024 Sunset Equestrian Center</div>
+    </footer>
 
     <script type="module" src="./javascripts/main.js"></script>
+    <script id="js_navmenu" src="navmenu.js"></script>
   </body>
 </html>
