@@ -5,7 +5,10 @@
     <title>Sunset Equestrian Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="Sunset Equestrian Center" />
+    <meta
+      name="description"
+      content="Sunset Equestrian Center offers horseback riding lessons, boarding services, and equine care programs for all ages."
+    />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="./stylesheets/main.scss" />
@@ -14,67 +17,8 @@
 
   <body>
     <header>
-      <!-- Nav Menu is in script at bottom to include javascript navment.js  -->
-
-      <!-- Hero slider start -->
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 0 -->
-          <div class="carousel-item active">
-            <img
-              src="/sunset_outside_office_fb.jpg"
-              class="d-block w-100"
-              alt="Slide 0 Sunset Equestrian main office"
-            />
-          </div>
-          <!-- Slide 1 -->
-          <div class="carousel-item">
-            <img
-              src="/cute-little-girl-autumn-field-with-horse_1157-28310.jpg"
-              class="d-block w-100"
-              alt="Slide 1 cute-little-girl-autumn-field-with-horse"
-            />
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img
-              src="/horse-silhouette-at-sunset-v3.jpg"
-              class="d-block w-100"
-              alt="Slide 2 horse-silhouette-at-sunset"
-            />
-          </div>
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img src="/sunset_eq-inside.webp" class="d-block w-100" alt="Slide 3 Sunset Equestrian inside facility" />
-          </div>
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <img src="/sunset_eq_outside.webp" class="d-block w-100" alt="Slide 4 Sunset Equestrian outside facility" />
-          </div>
-        </div>
-
-        <!-- Controls for sliding manually -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <!-- Static text overlay -->
-        <div class="carousel-caption-static">
-          <h1 class="cinzeldecor fw-bold">Sunset Equestrian Center</h1>
-          <p class="text-white fs-5 fw-light fst-italic mb-4">
-            Set on 22 acres in West Kaysville, we are one of Northern Utah's premier boarding and training facilities.
-            With top-notch arenas, scenic trails, beautiful amenities, and experienced trainers, we provide everything
-            you and your horse need to thrive in a welcoming, full-service environment.
-          </p>
-          <a href="#learn-more" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-      <!-- Hero slider end -->
+      <!-- Nav Menu in javascript navmenu.js  -->
+      <script id="js_navmenu" src="navmenu.js"></script>
     </header>
 
     <section id="about-us">
@@ -197,36 +141,9 @@
     </div>
     <!-- column layout end -->
 
-    <footer class="bg-dark text-white text-center text-lg-start mt-4">
-      <div class="container p-3">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-2">
-            <h5 class="text-uppercase">Sunset Equestrian Center</h5>
-            <p>820 Mare Circle<br />Kaysville, UT 84110</p>
-            <p>Phone: +123 456 7890</p>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-2 text-center">
-            <img
-              class="img-fluid bg-white rounded-circle p-1"
-              src="/Sunset_Eq_Icon_transparent_bkg.webp"
-              alt="Sunset Equestrian Center"
-              width="100"
-              height="100"
-            />
-            <p class="mt-1">Contact us today to join the SEC family!</p>
-          </div>
-          <div class="col-lg-4 col-md-12 mb-2">
-            <h5 class="text-uppercase">Follow Us</h5>
-            <a href="#" class="text-light me-4">Facebook</a>
-            <a href="#" class="text-light me-4">Twitter</a>
-            <a href="#" class="text-lightk">Instagram</a>
-          </div>
-        </div>
-      </div>
-      <div class="text-center p-3" style="background-color: #f8f9fa">© 2024 Sunset Equestrian Center</div>
-    </footer>
+    <!-- Footer  in javascript footer.js  -->
+    <script id="js_footer" src="footer.js"></script>
 
     <script type="module" src="./javascripts/main.js"></script>
-    <script id="js_navmenu" src="navmenu.js"></script>
   </body>
 </html>

@@ -9,11 +9,13 @@
 
 /* Ensures the carousel covers the full height of the viewport */
 #heroCarousel {
-  height: 100vh;
+  /* was 100vh */
+  height: 75vh;
 }
 
 #heroCarousel .carousel-item img {
-  height: 100vh;
+  /* was 100vh */
+  height: 75vh;
   object-fit: cover; /* Ensures images cover the carousel area */
 }
 
@@ -21,7 +23,7 @@
 #heroCarousel .carousel-caption-static {
   position: absolute;
   z-index: 15;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
