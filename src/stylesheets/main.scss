@@ -74,9 +74,33 @@
 }
 
 .lt-gray {
-  background-color: lightgray;
+  background-color: #f0f0f0;
 }
 
 .flipped {
   transform: scaleX(-1);
+}
+
+/*center the heading and lines*/
+.pa-heading-line-both h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*add and adjust the lines*/
+.pa-heading-line-both h2:before,
+.pa-heading-line-both h2:after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+  color: #666666;
+}
+
+/*add spacing between heading and lines*/
+.pa-heading-line-both h2:after {
+  margin: 0 0 0 20px;
 }
