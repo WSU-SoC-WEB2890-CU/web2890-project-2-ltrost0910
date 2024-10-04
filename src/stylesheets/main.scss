@@ -4,7 +4,7 @@
 
 .cinzeldecor {
   font-family: "Cinzel Decorative", serif;
-  color: white;
+  // color: white;
 }
 
 /* Ensures the carousel covers the full height of the viewport */
@@ -81,26 +81,29 @@
   transform: scaleX(-1);
 }
 
-/*center the heading and lines*/
-.pa-heading-line-both h2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.decor-heading {
+  position: relative;
+  background-image: url("/fancy_underline.png"); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center bottom; /* Position at the bottom and center it */
+  background-size: contain; /* Ensures the image scales properly without being cut off */
+  padding-bottom: 25px; /* Adjust to add space for the background image */
+  display: inline-block;
+  max-width: 300px;
+  width: 100%; /* Makes sure the element takes up full width for background */
+  text-align: center; /* Centers the text */
 }
 
-/*add and adjust the lines*/
-.pa-heading-line-both h2:before,
-.pa-heading-line-both h2:after {
-  content: "";
-  border-top: 2px solid;
-  margin: 0 20px 0 0;
-  flex: 1 0 20px;
-  color: #666666;
+/* Default image size (for large screens) */
+footer img {
+  width: 100px; /* Default size */
+  height: 100px;
 }
 
-/*add spacing between heading and lines*/
-.pa-heading-line-both h2:after {
-  margin: 0 0 0 20px;
+/* For screens smaller than large (992 is large) */
+@media (max-width: 991px) {
+  footer img {
+    width: 60px; /* Smaller size for medium to small screens */
+    height: 60px;
+  }
 }
