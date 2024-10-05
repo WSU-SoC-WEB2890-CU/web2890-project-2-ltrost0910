@@ -45,7 +45,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  /* rgba(0, 0, 0, 0.6); Semi-transparent overlay */
 }
 
 // SCSS Mixin to apply gradient and background image
@@ -65,33 +66,33 @@
 // }
 
 .img-gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--image-url);
+  /* top down gradient */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--image-url);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   aspect-ratio: 3 / 2;
   position: relative;
 }
+.force-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .lt-gray {
   background-color: #f0f0f0;
 }
 
-.flipped {
-  transform: scaleX(-1);
+.bg-blur {
+  backdrop-filter: blur(4px) saturate(80%);
 }
 
 .decor-heading {
-  position: relative;
-  background-image: url("/fancy_underline.png"); /* Replace with your image path */
-  background-repeat: no-repeat;
-  background-position: center bottom; /* Position at the bottom and center it */
-  background-size: contain; /* Ensures the image scales properly without being cut off */
-  padding-bottom: 25px; /* Adjust to add space for the background image */
-  display: inline-block;
-  max-width: 300px;
-  width: 100%; /* Makes sure the element takes up full width for background */
-  text-align: center; /* Centers the text */
+  content: url("/fancy_underline.png");
+  width: 300px;
 }
 
 /* Default image size (for large screens) */
@@ -103,7 +104,7 @@ footer img {
 /* For screens smaller than large (992 is large) */
 @media (max-width: 991px) {
   footer img {
-    width: 60px; /* Smaller size for medium to small screens */
+    width: 60px;
     height: 60px;
   }
 }
