@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to set active nav link based on current URL
   function setActiveNavLink() {
-    let currentPath = window.location.pathname.slice(1) || "index.html" // Get current URL path without leading slash
+    // Get current URL path without leading slash
+    //let currentPath = window.location.pathname.slice(1) || "index.html" 
+    let currentPath = window.location.pathname
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link") // Select all nav links
 
     navLinks.forEach((link) => {
