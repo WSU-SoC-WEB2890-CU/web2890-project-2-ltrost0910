@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach((link) => {
       const linkPath = link.getAttribute("href")
+       console.log(`linkPath: ${linkPath}, currentPath: ${currentPath}`);
       if (linkPath === currentPath) {
         link.classList.add("active") // Set active class if it matches the current URL
       } else {
