@@ -147,27 +147,43 @@ footer img {
   }
 }
 
-.overlapping-text {
-  /* these two statements below are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
-  align-self: flex-start;
-  transform: translateX(-20%);
-  /* the following are for example only */
-  background-color: #ffffff;
-  padding: 20px;
+/* Ensure the image container and text container take equal height */
+.image-grow {
+  object-fit: cover;
+  flex-grow: 1; /* Ensure the image grows to match or exceed the container's height */
+  min-height: 100%; /* Make sure the image is at least as tall as the container */
+  width: 100%; /* Keep the image width responsive */
 }
-
-/* Styles for medium and larger screens */
-// @media (min-width: 768px) {
-//   .overlapping-text {
-//     transform: translateX(-20%); /* Keep this for overlap */
-//   }
-// }
 
 /* Styles for smaller screens */
 @media (max-width: 767px) {
+  .overlapping-row {
+    margin-left: inherit;
+  }
   .overlapping-text {
     transform: translateX(0); /* Reset translation for better layout */
-    margin-top: 15px; /* Space from the image */
-    padding: 15px; /* Adjust padding if necessary */
+    width: 100%;
+  }
+  .overlapping-text p {
+    margin-top: 2rem;
+  }
+  .image-grow {
+    height: auto; /* Let the image behave normally in a single-column layout */
+  }
+}
+
+/* Styles for medium and larger screens */
+@media (min-width: 768px) {
+  .overlapping-row {
+    margin-left: 10%;
+  }
+  .overlapping-text {
+    transform: translateX(-20%); /* Keep this for overlap */
+  }
+  .overlapping-text p {
+    margin-top: 5rem;
+  }
+  .image-grow {
+    min-height: 110%; /* Ensure the image is always a bit taller than the text */
   }
 }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((link) => {
       const linkId = link.getAttribute("id")
       if (linkId === currentPage) {
-        link.classList.add("active") // Set active class if it matches the current URL
+        link.classList.add("active") // Set active class if it matches the current page
       } else {
         link.classList.remove("active") // Remove active class from other links if there
       }
