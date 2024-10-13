@@ -151,8 +151,23 @@ footer img {
   /* these two statements below are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
   align-self: flex-start;
   transform: translateX(-20%);
-
   /* the following are for example only */
   background-color: #ffffff;
   padding: 20px;
+}
+
+/* Styles for medium and larger screens */
+// @media (min-width: 768px) {
+//   .overlapping-text {
+//     transform: translateX(-20%); /* Keep this for overlap */
+//   }
+// }
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+  .overlapping-text {
+    transform: translateX(0); /* Reset translation for better layout */
+    margin-top: 15px; /* Space from the image */
+    padding: 15px; /* Adjust padding if necessary */
+  }
 }
