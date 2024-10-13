@@ -8,26 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((res) => res.text())
     .then((text) => {
       let oldelem = document.querySelector("script#js_navmenu")
+      let currentPage = document.querySelector("script#js_navmenu").getAttribute("page-name")
       let newelem = document.createElement("div")
       newelem.innerHTML = text
       oldelem.parentNode.replaceChild(newelem, oldelem)
-      setActiveNavLink()
+      setActiveNavLinkFromVar(currentPage)
     })
 
-  // Function to set active nav link based on current URL
-  function setActiveNavLink() {
-    // Get current URL path without leading slash
-    //let currentPath = window.location.pathname.slice(1) || "index.html" 
-    let currentPath = window.location.pathname
+  function setActiveNavLinkFromVar(currentPage) {
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link") // Select all nav links
-
     navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href")
-       console.log(`linkPath: ${linkPath}, currentPath: ${currentPath}`);
-      if (linkPath === currentPath) {
+      const linkId = link.getAttribute("id")
+      if (linkId === currentPage) {
         link.classList.add("active") // Set active class if it matches the current URL
       } else {
-        link.classList.remove("active") // Remove active class from other links
+        link.classList.remove("active") // Remove active class from other links if there
       }
     })
   }
