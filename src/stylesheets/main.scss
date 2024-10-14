@@ -148,7 +148,7 @@ footer img {
 }
 
 /* Ensure the image container and text container take equal height */
-.image-grow {
+.overlapping-image-grow {
   object-fit: cover;
   flex-grow: 1; /* Ensure the image grows to match or exceed the container's height */
   min-height: 100%; /* Make sure the image is at least as tall as the container */
@@ -167,7 +167,7 @@ footer img {
   .overlapping-text p {
     margin-top: 2rem;
   }
-  .image-grow {
+  .overlapping-image-grow {
     height: auto; /* Let the image behave normally in a single-column layout */
   }
 }
@@ -178,12 +178,12 @@ footer img {
     margin-left: 10%;
   }
   .overlapping-text {
-    transform: translateX(-20%); /* Keep this for overlap */
+    transform: translateX(-20%); /*  Keep this for overlap */
   }
   .overlapping-text p {
     margin-top: 5rem;
   }
-  .image-grow {
+  .overlapping-image-grow {
     min-height: 110%; /* Ensure the image is always a bit taller than the text */
   }
 }
