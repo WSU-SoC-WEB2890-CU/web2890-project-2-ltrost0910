@@ -147,6 +147,20 @@ footer img {
   }
 }
 
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+  .float-figure {
+    width: 100%;
+  }
+}
+
+/* Styles for medium and larger screens */
+@media (min-width: 768px) {
+  .float-figure {
+    width: 50%;
+  }
+}
+
 /* Ensure the image container and text container take equal height */
 .overlapping-image-grow {
   object-fit: cover;
@@ -181,7 +195,7 @@ footer img {
     transform: translateX(-20%); /*  Keep this for overlap */
   }
   .overlapping-text p {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .overlapping-image-grow {
     min-height: 110%; /* Ensure the image is always a bit taller than the text */
