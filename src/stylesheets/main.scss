@@ -203,3 +203,19 @@ footer img {
     min-height: 110%; /* Ensure the image is always a bit taller than the text */
   }
 }
+
+.contact-section {
+  padding: 4rem 0;
+}
+.contact-map {
+  height: 400px;
+  width: 100%;
+  border: none;
+}
+.contact-form-feedback {
+  color: #dc3545;
+  margin-top: 0.5rem;
+}
+.contact-form-success {
+  color: #28a745;
+}
