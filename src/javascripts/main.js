@@ -1,4 +1,3 @@
-//TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
 
 // Ensure the DOM is fully loaded before running the script

@@ -1,34 +1,11 @@
 //FONTS
-@import url("https://fonts.cdnfonts.com/css/lato"); //don't need
-@import url("https://fonts.cdnfonts.com/css/nextwave"); //don't need
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"); // Import font awesome
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"); // Import Cinzel
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); // Import Montserrat
 
-// THEME COLORS
-// Primary Colors:
-//      Warm Sunset Orange (#FF8C42) - Represents the beauty of the sunset, warmth, and energy.
-//      E57E3B a little darker orange
-//      Deep Saddle Brown (#8B4513) - A natural earthy tone, reflecting the equestrian aspect and connection to horses.
-//      Golden Amber (#FFBF00) - Suggests luxury, warmth, and the golden hue of the sun at dusk.
-// Secondary Colors:
-//      Soft Sky Blue (#87CEEB) - Reflects the sky, creating balance and calm, while pairing well with warm tones.
-//      Pale Sky Blue (#B0E2FF) - lighter version of above
-//      Light Powder Blue (#D6F0FF) - even lighter for backgrounds
-//      DAF1FF even lighter
-//      Muted Green (#556B2F) - Evokes the feeling of nature, pastures, and stability.
-//      Creamy Beige (#F5F5DC) - A neutral, elegant color that pairs well with bold shades and maintains a refined look.
-
 $my-primary: #e57e3b;
-$my-secondary: #FDF8E1;  //warmer yellow
-//$my-secondary: #f5f5dc; //creamy beige
-//$my-secondary: #f4fbff;  very very light blue
-//$my-secondary: #edf8ff;
-// $my-secondary: #d6f0ff;
-//$my-secondary: #daf1ff;
-
+$my-secondary: #fdf8e1; //warmer yellow
 $footer: #151414; // don't need
-
 $primary: $my-primary;
 $secondary: $my-secondary;
 $font-family-base: "Montserrat", sans-serif;
