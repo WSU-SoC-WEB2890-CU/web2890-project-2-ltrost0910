@@ -1,6 +1,6 @@
 /* Your styles go here */
 @import "custom"; //fonts and colors set here
-// @import "lightbox"; lightbox css set here
+@import "lightbox"; // lightbox css set here
 
 .cinzeldecor {
   font-family: $cinzel-decor;
@@ -123,9 +123,17 @@
   right: 1.875rem;
   bottom: 1.875rem;
   z-index: 9999;
+  background-color: black;
+  color: white; /* Text or icon inside will be white */
+
+  filter: invert(0); /* Default, white icon on black background */
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: invert(1); /* Inverts the color when hovered: black icon on white background */
+  }
 
   i {
-    color: $white;
     font-size: 1rem;
     position: absolute;
     top: 50%;

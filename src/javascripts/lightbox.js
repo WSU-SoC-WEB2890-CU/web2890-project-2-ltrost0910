@@ -1,5 +1,4 @@
 //lightbox
-
 const html = document.querySelector("html")
 // html.setAttribute("data-bs-theme", "dark")
 
@@ -7,7 +6,9 @@ const galleryGrid = document.querySelector(".gallery-grid")
 const links = galleryGrid.querySelectorAll("a")
 const imgs = galleryGrid.querySelectorAll("img")
 const lightboxModal = document.getElementById("lightbox-modal")
-//const bsModal = new bootstrap.Modal(lightboxModal)
+
+const bsModal = new bootstrap.Modal(lightboxModal)
+
 const modalBody = lightboxModal.querySelector(".lightbox-content")
 
 function createCaption(caption) {
