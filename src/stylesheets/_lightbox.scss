@@ -76,13 +76,21 @@
   animation: zoomin 10s linear infinite;
 }
 
+// .lightbox-modal .carousel-item .carousel-caption {
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   padding-bottom: 1.5rem;
+//   background-color: var(--lightbox);
+//   color: var(--carousel-text) !important;
+// }
+
 .lightbox-modal .carousel-item .carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 1.5rem;
-  background-color: var(--lightbox);
-  color: var(--carousel-text) !important;
+  position: static; /* Ensure the caption is not positioned absolutely */
+  padding: 1rem; /* Add padding for better visibility */
+  background-color: var(--lightbox); /* Background for contrast */
+  color: var(--carousel-text) !important; /* Caption text color */
+  text-align: center; /* Center the caption text */
 }
 
 .lightbox-modal .carousel-control-prev,
