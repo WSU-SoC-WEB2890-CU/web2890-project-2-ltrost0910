@@ -1,26 +1,5 @@
 //lightbox
 
-//preload images
-function preloadImages(...images) {
-  images.forEach((imageUrl) => {
-    const img = new Image()
-    img.src = imageUrl
-  })
-}
-
-// Example usage
-preloadImages(
-  "/cute-little-girl-autumn-field-with-horse_1157-28310.jpg",
-  "/sunset_eq-inside-boy-edited.jpg",
-  "/young-female-preparing-ride.jpg",
-  "/sunset_outdoor_arena.webp",
-  "/sunset_outside_stalls2.webp",
-  "/sunset_indoor_arena.webp",
-  "/sunset_outside_office_fb.jpg",
-  "/palomino_and_pals-edited.jpg",
-  "/sunset-eq-inside-cropped.jpg"
-)
-
 const html = document.querySelector("html")
 // html.setAttribute("data-bs-theme", "dark")
 
