@@ -80,7 +80,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   background-color: var(--lightbox);
   color: var(--carousel-text) !important;
 }
@@ -101,6 +101,22 @@
 @media (min-width: 1400px) {
   .lightbox-modal .carousel-inner {
     max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  .lightbox-modal .modal-dialog {
+    max-width: 90%; /* Set a larger width for mobile devices */
+  }
+
+  .lightbox-modal .carousel-inner {
+    width: 100%; /* Ensure full width for images */
+  }
+
+  .lightbox-modal .carousel-caption h4 {
+    padding: 0.5rem !important; /* Smaller padding on mobile */
+    font-size: 1rem !important; /* Adjust font size for better visibility */
   }
 }
 

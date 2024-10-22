@@ -12,8 +12,14 @@ const bsModal = new bootstrap.Modal(lightboxModal)
 
 const modalBody = lightboxModal.querySelector(".lightbox-content")
 
+// function createCaption(caption) {
+//   return `<div class="carousel-caption d-none d-md-block">
+//       <h4 class="m-0">${caption}</h4>
+//     </div>`
+// }
+
 function createCaption(caption) {
-  return `<div class="carousel-caption d-none d-md-block">
+  return `<div class="carousel-caption d-block">
       <h4 class="m-0">${caption}</h4>
     </div>`
 }
