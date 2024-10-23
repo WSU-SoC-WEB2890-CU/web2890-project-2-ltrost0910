@@ -95,7 +95,21 @@
 
 .lightbox-modal .carousel-control-prev,
 .lightbox-modal .carousel-control-next {
-  width: auto;
+  //width: auto;
+  width: 3rem; /* Set the control width */
+  height: 3rem; /* Set the control height */
+  background-color: #fff; /* White background */
+  border-radius: 50%; /* Make the control circular */
+  opacity: 1; /* Ensure full visibility */
+
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust positioning to keep it centered */
+  bottom: unset; /* Remove any bottom alignment */
+}
+
+.lightbox-modal .carousel-control-prev-icon,
+.lightbox-modal .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%); /* Invert to make arrow dark */
 }
 
 .lightbox-modal .carousel-control-prev {
