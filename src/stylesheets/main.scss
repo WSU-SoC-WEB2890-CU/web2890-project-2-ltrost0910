@@ -148,36 +148,28 @@ footer img {
   height: 100px;
 }
 
-/* For screens smaller than large (992 is large) */
-@media (max-width: 991px) {
-  footer img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-/* Styles for smaller screens */
-@media (max-width: 767px) {
-  .float-figure {
-    width: 100%;
-    margin-right: initial;
-  }
-}
-
-/* Styles for medium and larger screens */
-@media (min-width: 768px) {
-  .float-figure {
-    width: 40%;
-    margin-right: 2rem;
-  }
-}
-
 /* Ensure the image container and text container take equal height */
 .overlapping-image-grow {
   object-fit: cover;
   flex-grow: 1; /* Ensure the image grows to match or exceed the container's height */
   min-height: 100%; /* Make sure the image is at least as tall as the container */
   width: 100%; /* Keep the image width responsive */
+}
+
+.contact-section {
+  padding: 4rem 0;
+}
+.contact-map {
+  height: 400px;
+  width: 100%;
+  border: none;
+}
+.contact-form-feedback {
+  color: #dc3545;
+  margin-top: 0.5rem;
+}
+.contact-form-success {
+  color: #28a745;
 }
 
 /* Styles for smaller screens */
@@ -213,18 +205,26 @@ footer img {
   }
 }
 
-.contact-section {
-  padding: 4rem 0;
+/* For screens smaller than large (992 is large) */
+@media (max-width: 991px) {
+  footer img {
+    width: 60px;
+    height: 60px;
+  }
 }
-.contact-map {
-  height: 400px;
-  width: 100%;
-  border: none;
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+  .float-figure {
+    width: 100%;
+    margin-right: initial;
+  }
 }
-.contact-form-feedback {
-  color: #dc3545;
-  margin-top: 0.5rem;
-}
-.contact-form-success {
-  color: #28a745;
+
+/* Styles for medium and larger screens */
+@media (min-width: 768px) {
+  .float-figure {
+    width: 40%;
+    margin-right: 2rem;
+  }
 }
