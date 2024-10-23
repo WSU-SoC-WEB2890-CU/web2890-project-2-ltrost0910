@@ -120,7 +120,26 @@
   right: 1.25rem;
 }
 
+[data-bs-theme="dark"] .lightbox-modal .carousel-control-next-icon,
+[data-bs-theme="dark"] .lightbox-modal .carousel-control-prev-icon {
+  filter: none;
+}
+
+//make modal not take up entire screen
+.lightbox-modal .modal-dialog {
+  max-width: 75%; /* Set the maximum width of the modal */
+  margin: auto; /* Center the modal */
+}
+
+.lightbox-modal .modal-content {
+  background-color: var(--lightbox); /* Background color already set */
+  border-radius: 0.5rem; /* Optional: Add some border radius for a more elegant look */
+}
+
 @media (min-width: 1400px) {
+  .lightbox-modal .modal-dialog {
+    max-width: 60%; /* On larger screens, reduce the width further */
+  }
   .lightbox-modal .carousel-inner {
     max-width: 60%;
   }
@@ -140,26 +159,4 @@
     padding: 0.5rem !important; /* Smaller padding on mobile */
     font-size: 1rem !important; /* Adjust font size for better visibility */
   }
-}
-
-[data-bs-theme="dark"] .lightbox-modal .carousel-control-next-icon,
-[data-bs-theme="dark"] .lightbox-modal .carousel-control-prev-icon {
-  filter: none;
-}
-
-//make modal not take up entire screen
-.lightbox-modal .modal-dialog {
-  max-width: 75%; /* Set the maximum width of the modal */
-  margin: auto; /* Center the modal */
-}
-
-@media (min-width: 1400px) {
-  .lightbox-modal .modal-dialog {
-    max-width: 60%; /* On larger screens, reduce the width further */
-  }
-}
-
-.lightbox-modal .modal-content {
-  background-color: var(--lightbox); /* Background color already set */
-  border-radius: 0.5rem; /* Optional: Add some border radius for a more elegant look */
 }
