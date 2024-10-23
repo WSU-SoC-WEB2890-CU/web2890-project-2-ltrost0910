@@ -1,0 +1,15 @@
+//FONTS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"); // Import font awesome
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"); // Import Cinzel
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); // Import Montserrat
+
+$my-primary: #e57e3b;
+$my-secondary: #fdf8e1; //warmer yellow
+$footer: #151414; // don't need
+$primary: $my-primary;
+$secondary: $my-secondary;
+$font-family-base: "Montserrat", sans-serif;
+$cinzel-decor: "Cinzel Decorative", serif;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.scss";

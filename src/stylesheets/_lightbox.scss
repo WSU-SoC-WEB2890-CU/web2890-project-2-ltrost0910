@@ -1,0 +1,162 @@
+:root {
+  --lightbox: rgb(0 0 0 / 0.75);
+  --carousel-text: #fff;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gallery-item {
+  display: block;
+}
+
+.gallery-item img {
+  width: 100%; /* Ensure images fill the width of their container */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image scales without distortion */
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+}
+
+.gallery-item:hover img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-modal .modal-content {
+  background-color: var(--lightbox);
+}
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  z-index: 100;
+  // filter: invert(1) grayscale(100);
+  background-color: #fff;
+  /* Increase click area */
+  width: 2rem; /* Increase the width of the button */
+  height: 2rem; /* Increase the height of the button */
+  padding: 0.5rem; /* Add padding around the button for better clickability */
+  cursor: pointer; /* Ensure it has a pointer cursor */
+}
+
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.lightbox-modal .lightbox-content {
+  width: 100%;
+}
+
+.lightbox-modal .carousel-indicators {
+  margin-bottom: 0;
+}
+
+.lightbox-modal .carousel-indicators [data-bs-target] {
+  background-color: var(--carousel-text) !important;
+}
+
+.lightbox-modal .carousel-inner {
+  width: 75%;
+}
+
+.lightbox-modal .carousel-inner img {
+  animation: zoomin 10s linear infinite;
+}
+
+// .lightbox-modal .carousel-item .carousel-caption {
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   padding-bottom: 1.5rem;
+//   background-color: var(--lightbox);
+//   color: var(--carousel-text) !important;
+// }
+
+.lightbox-modal .carousel-item .carousel-caption {
+  position: static; /* Ensure the caption is not positioned absolutely */
+  padding: 1rem; /* Add padding for better visibility */
+  background-color: var(--lightbox); /* Background for contrast */
+  color: var(--carousel-text) !important; /* Caption text color */
+  text-align: center; /* Center the caption text */
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  //width: auto;
+  width: 3rem; /* Set the control width */
+  height: 3rem; /* Set the control height */
+  background-color: #fff; /* White background */
+  border-radius: 50%; /* Make the control circular */
+  opacity: 1; /* Ensure full visibility */
+
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust positioning to keep it centered */
+  bottom: unset; /* Remove any bottom alignment */
+}
+
+.lightbox-modal .carousel-control-prev-icon,
+.lightbox-modal .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%); /* Invert to make arrow dark */
+}
+
+.lightbox-modal .carousel-control-prev {
+  left: 1.25rem;
+}
+
+.lightbox-modal .carousel-control-next {
+  right: 1.25rem;
+}
+
+[data-bs-theme="dark"] .lightbox-modal .carousel-control-next-icon,
+[data-bs-theme="dark"] .lightbox-modal .carousel-control-prev-icon {
+  filter: none;
+}
+
+//make modal not take up entire screen
+.lightbox-modal .modal-dialog {
+  max-width: 75%; /* Set the maximum width of the modal */
+  margin: auto; /* Center the modal */
+}
+
+.lightbox-modal .modal-content {
+  background-color: var(--lightbox); /* Background color already set */
+  border-radius: 0.5rem; /* Optional: Add some border radius for a more elegant look */
+}
+
+@media (min-width: 1400px) {
+  .lightbox-modal .modal-dialog {
+    max-width: 60%; /* On larger screens, reduce the width further */
+  }
+  .lightbox-modal .carousel-inner {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  .lightbox-modal .modal-dialog {
+    max-width: 90%; /* Set a larger width for mobile devices */
+  }
+
+  .lightbox-modal .carousel-inner {
+    width: 100%; /* Ensure full width for images */
+  }
+
+  .lightbox-modal .carousel-caption h4 {
+    padding: 0.5rem !important; /* Smaller padding on mobile */
+    font-size: 1rem !important; /* Adjust font size for better visibility */
+  }
+}
