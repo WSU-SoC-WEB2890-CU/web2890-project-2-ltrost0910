@@ -60,10 +60,6 @@
   text-align: center;
 }
 
-.lt-gray {
-  background-color: #f0f0f0;
-}
-
 .bg-blur {
   backdrop-filter: blur(4px) saturate(80%);
 }
@@ -106,14 +102,6 @@ footer img {
   height: 100px;
 }
 
-/* Ensure the image container and text container take equal height */
-.overlapping-image-grow {
-  object-fit: cover;
-  flex-grow: 1; /* Ensure the image grows to match or exceed the container's height */
-  min-height: 100%; /* Make sure the image is at least as tall as the container */
-  width: 100%; /* Keep the image width responsive */
-}
-
 .contact-section {
   padding: 4rem 0;
 }
@@ -130,37 +118,12 @@ footer img {
   color: #28a745;
 }
 
-/* Styles for smaller screens */
-@media (max-width: 768px) {
-  .overlapping-row {
-    margin-left: inherit;
-  }
-  .overlapping-text {
-    transform: translateX(0); /* Reset translation for better layout */
-    width: 100%;
-  }
-  .overlapping-text p {
-    margin-top: 2rem;
-  }
-  .overlapping-image-grow {
-    height: auto; /* Let the image behave normally in a single-column layout */
-  }
-}
-
-/* Styles for medium and larger screens */
-@media (min-width: 768px) {
-  .overlapping-row {
-    margin-left: 10%;
-  }
-  .overlapping-text {
-    transform: translateX(-20%); /*  Keep this for overlap */
-  }
-  .overlapping-text p {
-    margin-top: 4rem;
-  }
-  .overlapping-image-grow {
-    min-height: 110%; /* Ensure the image is always a bit taller than the text */
-  }
+// for testing
+.figure-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  /* height: 200px; Adjust the height as needed - do this on image */
 }
 
 /* For screens smaller than large (992 is large) */
