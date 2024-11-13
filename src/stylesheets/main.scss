@@ -1,8 +1,9 @@
 /* Your styles go here */
 @import "custom"; //fonts and colors set here
 @import "lightbox"; // lightbox css set here
+@import "carousel"; //carousel css set here
 
-.cinzeldecor {
+nzeldecor {
   font-family: $cinzel-decor;
 }
 
@@ -12,61 +13,17 @@
 }
 
 @media (max-width: 576px) {
-  /* bootstrap small */
   .responsive-header {
     font-size: 4vw;
   }
 }
 @media (max-width: 320px) {
-  /* bootstrap x-small */
   .responsive-header {
-    display: none; /* Hide original text */
+    display: none;
   }
   .responsive-short {
     display: block;
   }
-}
-
-/* Ensures the carousel covers the full height of the viewport */
-#heroCarousel {
-  /* was 100vh */
-  height: 75vh;
-}
-
-#heroCarousel .carousel-item img {
-  /* was 100vh */
-  height: 75vh;
-  object-fit: cover; /* Ensures images cover the carousel area */
-}
-
-/* Static caption text overlaying the images */
-#heroCarousel .carousel-caption-static {
-  position: absolute;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute; /* Required for z-index to work */
-  z-index: 20; /* Ensure the controls are on top of the background */
-}
-
-/* Add a background gradient overlay on top of the images */
-#heroCarousel::before {
-  content: "";
-  position: absolute;
-  z-index: 5; /* Keeps it behind the text but above the images */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-  /* rgba(0, 0, 0, 0.6); Semi-transparent overlay */
 }
 
 // SCSS Mixin to apply gradient and background image
@@ -112,8 +69,8 @@
 }
 
 .decor-heading {
-  content: url("/fancy_underline.png");
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 // STYLE THE BACK TO TOP BUTTON
