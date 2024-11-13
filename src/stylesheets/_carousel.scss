@@ -1,12 +1,12 @@
 /* Adjust the height of the carousel */
 #heroCarousel {
-  height: 60vh; /* Adjusted from 50vh */
+  height: 70vh;
   width: 100%;
   position: relative;
 }
 
 #heroCarousel .carousel-item img {
-  height: 60vh;
+  height: 70vh;
   object-fit: cover; /* Ensures images cover the carousel area */
 }
 
