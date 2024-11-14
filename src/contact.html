@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SEC - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Sunset Equestrian Center offers horseback riding lessons, boarding services, and equine care programs for all ages."
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Nav Menu in javascript main.js  -->
+      <script id="js_navmenu" page-name="contact"></script>
+    </header>
+
+    <div class="container-fluid m-0 py-0 px-3 px-md-5 bg-secondary border-top border-primary">
+      <section id="contact" class="bg-secondary">
+        <div class="mt-4 p-2 p-md-4 text-center">
+          <h2 class="mt-4 cinzeldecor fs-1 fw-bold text-dark">Contact Us</h2>
+          <img src="/fancy_underline.png" class="img-fluid decor-heading" />
+        </div>
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <form id="contactForm">
+                <div class="mt-0 mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                  <div class="contact-form-feedback" id="nameFeedback"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required />
+                  <div class="contact-form-feedback" id="emailFeedback"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" required></textarea>
+                  <div class="contact-form-feedback" id="messageFeedback"></div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary mt-4 py-2 px-3 px-md-5 mb-5 mb-lg-0 text-white fw-bold border border-dark"
+                >
+                  Send
+                </button>
+                <div class="contact-form-success" id="successMessage"></div>
+              </form>
+            </div>
+            <div class="col-lg-6 text-center">
+              <!-- Google Map iframe -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.917946355087!2d-111.95668328995094!3d41.005169119499215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fddf39ad379f%3A0x4f69c307f10c315b!2sSunset%20Equestrian%20Center!5e0!3m2!1sen!2sus!4v1729109871593!5m2!1sen!2sus"
+                width="400"
+                height="300"
+                style="border: 2px solid black"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="mt-4">
+                <h5 class="cinzeldecor fw-bold">Sunset Equestrian Center</h5>
+                <p>
+                  820 Mare Circle<br />Kaysville, UT 84110<br />
+                  Phone: +123 456 7890
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer  in javascript main.js  -->
+    <script id="js_footer"></script>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SEC - Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Sunset Equestrian Center offers horseback riding lessons, boarding services, and equine care programs for all ages."
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Nav Menu in javascript main.js  -->
+      <script id="js_navmenu" page-name="gallery"></script>
+    </header>
+    <div class="container-fluid m-0 pt-0 pb-4 px-3 px-md-5 bg-secondary border-top border-primary">
+      <section id="gallery">
+        <div class="mt-4 p-2 p-md-4 text-center">
+          <h2 class="mt-4 cinzeldecor fs-1 fw-bold text-dark">Gallery</h2>
+          <img src="/fancy_underline.png" class="img-fluid decor-heading" />
+        </div>
+
+        <h1 class="text-center mb-0">Sunset Equestrian Image Gallery</h1>
+        <p class="text-center mb-4">Click an image to see a larger photo</p>
+
+        <section class="photo-gallery">
+          <div class="container py-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+              <div class="col">
+                <a class="gallery-item" href="/cute-little-girl-autumn-field-with-horse_1157-28310.jpg">
+                  <img
+                    src="/cute-little-girl-autumn-field-with-horse_1157-28310.jpg"
+                    class="img-fluid"
+                    alt="Little girl with horse"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset_eq-inside-boy-edited.jpg">
+                  <img
+                    src="/sunset_eq-inside-boy-edited.jpg"
+                    class="img-fluid"
+                    alt="Sunset inside arena with little boy in aisle"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/young-female-preparing-ride.jpg">
+                  <img src="/young-female-preparing-ride.jpg" class="img-fluid" alt="Young woman preparing to ride" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset_indoor_arena.webp">
+                  <img src="/sunset_indoor_arena.webp" class="img-fluid" alt="Sunset indoor arena" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset_outside_office_fb.jpg">
+                  <img src="/sunset_outside_office_fb.jpg" class="img-fluid" alt="Sunset outside office" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/palomino_and_pals-edited.jpg">
+                  <img src="/palomino_and_pals-edited.jpg" class="img-fluid" alt="Palomino and pals" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset_outside_stalls2.webp">
+                  <img src="/sunset_outside_stalls2.webp" class="img-fluid" alt="Sunset outdoor stalls" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset-eq-inside-cropped.jpg">
+                  <img src="/sunset-eq-inside-cropped.jpg" class="img-fluid" alt="Sunset inside barn" />
+                </a>
+              </div>
+              <div class="col">
+                <a class="gallery-item" href="/sunset_outdoor_arena.webp">
+                  <img src="/sunset_outdoor_arena.webp" class="img-fluid" alt="Sunset outdoor arena" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
+          <!-- modal-fullscreen -->
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
+            <div class="modal-content pt-5 pb-3">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body">
+                <div class="lightbox-content">
+                  <!-- JS content here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer  in javascript main.js  -->
+    <script id="js_footer"></script>
+
+    <script type="module" src="./javascripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./javascripts/lightbox.js"></script>
+  </body>
+</html>
