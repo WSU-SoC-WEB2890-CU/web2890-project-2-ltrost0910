@@ -1,13 +1,16 @@
-/* Adjust the height of the carousel */
+/* Default sizes (extra small) Adjust the height of the carousel */
 #heroCarousel {
-  height: 70vh;
-  width: 100%;
+  height: 80vh;
+  width: 100vw; //was 100%
   position: relative;
 }
-
 #heroCarousel .carousel-item img {
-  height: 70vh;
+  height: 80vh;
+  width: 100vw;
   object-fit: cover; /* Ensures images cover the carousel area */
+}
+.hero-paragraph {
+  font-size: 14px; /* Default size for very small screens */
 }
 
 /* Static caption text overlaying the images */
@@ -26,6 +29,7 @@
 
 .carousel-control-prev,
 .carousel-control-next {
+  width: 8%;
   position: absolute; /* Required for z-index to work */
   z-index: 20; /* Ensure the controls are on top of the background */
 }
@@ -42,19 +46,26 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
 }
 
-/* Responsive adjustments for medium and above screens */
+/* Bootstrap small screen breakpoint: 576px */
+@media (min-width: 576px) {
+  .hero-paragraph {
+    font-size: 16px;
+  }
+}
+
+/* Bootstrap medium screen breakpoint: 768px */
 @media (min-width: 768px) {
+  .hero-paragraph {
+    font-size: 18px;
+  }
+  /* Responsive adjustments for medium and above screens */
   #heroCarousel {
-    height: 50vh;
+    height: 60vh; /* Adjust height for medium screens */
+    width: 100vw;
   }
   #heroCarousel .carousel-item img {
-    height: 50vh;
-  }
-  .carousel-caption-static h1 {
-    font-size: 2rem; /* Smaller font size for h1 on medium screens */
-  }
-  .carousel-caption-static p {
-    font-size: 0.9rem; /* Smaller font size for paragraph */
+    height: 60vh; /* Adjust image height for medium screens */
+    width: 100vw;
   }
   .carousel-caption-static {
     max-width: 80%; /* Increase max-width for medium screens */
@@ -62,14 +73,42 @@
   }
 }
 
+/* Bootstrap large screen breakpoint: 992px */
+@media (min-width: 992px) {
+  .hero-paragraph {
+    font-size: 20px;
+  }
+  /* Responsive adjustments for large and above screens */
+  #heroCarousel {
+    height: 50vh;
+    width: 100vw;
+  }
+  #heroCarousel .carousel-item img {
+    height: 50vh;
+    width: 100vw;
+  }
+  .carousel-caption-static {
+    max-width: 90%; /* Increase max-width screens */
+    padding: 10px 20px;
+  }
+}
+
+/* Bootstrap extra large screen breakpoint: 1200px */
+@media (min-width: 1200px) {
+  .hero-paragraph {
+    font-size: 22px;
+  }
+}
+
+/* Extra large screens above 1400px */
+@media (min-width: 1400px) {
+  .hero-paragraph {
+    font-size: 24px;
+  }
+}
+
 /* Responsive adjustments for small screens */
 @media (max-width: 576px) {
-  .carousel-caption-static h1 {
-    font-size: 1.5rem; /* Smaller font size for h1 on small screens */
-  }
-  .carousel-caption-static p {
-    font-size: 0.8rem; /* Smaller font size for paragraph */
-  }
   .carousel-caption-static a {
     font-size: 0.85rem;
     padding: 8px 16px;

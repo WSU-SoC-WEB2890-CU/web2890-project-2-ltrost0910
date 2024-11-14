@@ -92,6 +92,18 @@ footer img {
   color: #28a745;
 }
 
+/* Initially, make the image non-clickable */
+.card-img-link {
+  pointer-events: none;
+}
+
+/* Enable clicking the image on medium screens and above */
+@media (min-width: 768px) {
+  .card-img-link {
+    pointer-events: auto;
+  }
+}
+
 .figure-img {
   object-fit: cover;
   object-position: center;
