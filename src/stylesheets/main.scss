@@ -17,7 +17,7 @@
     font-size: 4vw;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .responsive-header {
     display: none;
   }
@@ -25,22 +25,6 @@
     display: block;
   }
 }
-
-// SCSS Mixin to apply gradient and background image
-// @mixin gradient-overlay {
-//   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--image-url);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
-
-// Use the mixin in a class
-// .image-with-gradient {
-//   --image-url: ""; // Set default value
-//   @include gradient-overlay;
-//   height: 200px; // Adjust height as needed
-//   position: relative;
-// }
 
 .img-gradient {
   /* top down gradient */
@@ -79,10 +63,8 @@
   z-index: 9999;
   background-color: black;
   color: white; /* Text or icon inside will be white */
-
   filter: invert(0); /* Default, white icon on black background */
   transition: filter 0.3s ease-in-out;
-
   &:hover {
     filter: invert(1); /* Inverts the color when hovered: black icon on white background */
   }
@@ -145,13 +127,13 @@ footer img {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .card-title {
     font-size: 1.5rem;
   }
 }
-/* Media query for extra small screens (320px) */
-@media (max-width: 320px) {
+/* Media query for extra small screens (320px) 390 for some phones so use 400 */
+@media (max-width: 400px) {
   iframe {
     width: 100%; // Make it responsive to fit the screen width
     height: 200px; // Adjust the height as needed
